@@ -17,6 +17,11 @@ This version introduces the `WeatherCard.children` component, which accepts a `w
 ### Mobile View
 ![Weather Widget App - Mobile View](./src/assets/screenshots/mobile.png)
 
+## Live Demo
+Experience the Weather Widget App in action by visiting the live demo:
+
+[Weather Widget Live Demo](https://obrm-weather-widget.netlify.app)
+
 ## Installation
 
 To set up the Weather Widget App locally, follow these steps:
