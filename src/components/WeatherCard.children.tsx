@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Weather } from '../types/Weather';
+import { Weather } from '../types/Interfaces';
 
 interface WeatherCardProps {
   children: React.ReactNode;

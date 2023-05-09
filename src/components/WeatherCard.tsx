@@ -1,4 +1,4 @@
-import { Weather } from '../types/Weather';
+import { Weather } from '../types/Interfaces';
 
 import getImageSrc from './../utils/getImageSrc';
 
@@ -13,7 +13,7 @@ const WeatherCard: React.FC<WeatherCardProps> = ({ cityWeather: { city, temperat
   const imageSrc: string = getImageSrc(weather, 'image');
 
   return (
-    <div className='weather-card' style={{ backgroundImage: imageSrc }}>
+    <div className='weather-card' style={{ backgroundImage: `url(${imageSrc})` }}>
       <City name={city} />
       <WeatherIcon weather={weather} />
       <Temperature value={temperature} />

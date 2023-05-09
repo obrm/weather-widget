@@ -1,3 +1,7 @@
+import {
+	IconMap,
+	ImageMap,
+} from '../types/Interfaces';
 import { ImageType } from '../types/ImageType';
 
 import sunnyIcon from '../assets/weather-icons/sunny.png';
@@ -11,44 +15,32 @@ import rainyImage from '../assets/weather-images/rainy.jpg';
 import foggyImage from '../assets/weather-images/foggy.jpg';
 import snowyImage from '../assets/weather-images/snowy.jpg';
 
+const iconMap: IconMap = {
+	sunny: sunnyIcon,
+	cloudy: cloudyIcon,
+	rainy: rainyIcon,
+	foggy: foggyIcon,
+	snowy: snowyIcon,
+};
+
+const imageMap: ImageMap = {
+	cloudy: cloudyImage,
+	rainy: rainyImage,
+	foggy: foggyImage,
+	snowy: snowyImage,
+};
+
+const defaultIcon = sunnyIcon;
+const defaultImage = sunnyImage;
+
 const getImageSrc = (
 	weather: string,
 	type: ImageType,
 ): string => {
 	if (type === 'icon') {
-		switch (weather) {
-			case 'sunny':
-				return sunnyIcon;
-			case 'cloudy':
-				return cloudyIcon;
-			case 'rainy':
-				return rainyIcon;
-			case 'foggy':
-				return foggyIcon;
-			case 'snowy':
-				return snowyIcon;
-			default:
-				console.error(
-					`Unknown weather type: ${weather}`,
-				);
-				return sunnyIcon;
-		}
+		return iconMap[weather] || defaultIcon;
 	} else {
-		switch (weather) {
-			case 'cloudy':
-				return cloudyImage;
-			case 'rainy':
-				return rainyImage;
-			case 'foggy':
-				return foggyImage;
-			case 'snowy':
-				return snowyImage;
-			default:
-				console.error(
-					`Unknown weather type: ${weather}`,
-				);
-				return sunnyImage;
-		}
+		return imageMap[weather] || defaultImage;
 	}
 };
 

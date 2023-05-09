@@ -1,4 +1,4 @@
-import { Weather } from '../types/Weather';
+import { Weather } from '../types/Interfaces';
 
 const weatherData: Weather[] = [
 	{
