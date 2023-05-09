@@ -28,6 +28,10 @@ h1 {
   padding: 0 2rem;
   margin-bottom: 2rem;
 
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
