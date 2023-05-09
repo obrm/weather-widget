@@ -14,9 +14,13 @@ const WeatherCard: React.FC<WeatherCardProps> = ({ cityWeather: { city, temperat
 
   return (
     <div className='weather-card' style={{ backgroundImage: `url(${imageSrc})` }}>
-      <City name={city} />
-      <WeatherIcon weather={weather} />
-      <Temperature value={temperature} />
+      <div className="weather-card-top">
+        <City name={city} />
+        <WeatherIcon weather={weather} />
+      </div>
+      <div className="weather-card-bottom">
+        <Temperature value={temperature} />
+      </div>
     </div>
   );
 };
