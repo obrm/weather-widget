@@ -1,6 +1,6 @@
 import { Weather } from '../types/Interfaces';
 
-import getImageSrc from './../utils/getImageSrc';
+import getImageSrc from '../utils/getImageSrc';
 
 import { WeatherIcon, Temperature, City } from './';
 

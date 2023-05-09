@@ -1,6 +1,7 @@
 import WeatherIcon from './WeatherIcon';
 import Temperature from './Temperature';
 import WeatherCard from './WeatherCard';
+import WeatherCardChildren from './WeatherCard.children';
 import City from './City';
 
 export {
@@ -8,4 +9,5 @@ export {
 	Temperature,
 	City,
 	WeatherCard,
+	WeatherCardChildren,
 };
