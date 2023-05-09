@@ -2,7 +2,7 @@ import { Weather } from '../types/Interfaces';
 
 import getImageSrc from '../utils/getImageSrc';
 
-import { WeatherIcon, Temperature, City } from './';
+import { WeatherIcon, Temperature, City, WeatherName } from './';
 
 
 interface WeatherCardProps {
@@ -17,6 +17,7 @@ const WeatherCard: React.FC<WeatherCardProps> = ({ cityWeather: { city, temperat
       <div className="weather-card-top">
         <City name={city} />
         <WeatherIcon weather={weather} />
+        <WeatherName weather={weather} />        
       </div>
       <div className="weather-card-bottom">
         <Temperature value={temperature} />

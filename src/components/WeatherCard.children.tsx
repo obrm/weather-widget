@@ -1,7 +1,5 @@
 import React from "react";
 
-import { Weather } from '../types/Interfaces';
-
 import getImageSrc from '../utils/getImageSrc';
 
 interface WeatherCardProps {
