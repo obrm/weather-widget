@@ -1,14 +1,18 @@
 # Weather Widget App
 
-Weather Widget is a basic and simple web application that displays weather for six locations using mock data from `weatherData.ts`. It's built with React, TypeScript, SCSS and Vite. The application is designed with responsiveness in mind, ensuring that the layout and components adapt seamlessly to different screen sizes and orientations, providing an optimal user experience on a variety of devices, including desktops, laptops, tablets and smartphones. There are two versions of the `App.tsx` and `WeatherCard.tsx` files, showcasing different design patterns. 
+Weather Widget is a basic and simple web application that displays weather for six locations using mock data from `weatherData.ts`. It's built with React, TypeScript, SCSS and Vite. The application is designed with responsiveness in mind, ensuring that the layout and components adapt seamlessly to different screen sizes and orientations, providing an optimal user experience on a variety of devices, including desktops, laptops, tablets and smartphones. There are three versions of the `App.tsx` and `WeatherCard.tsx` files, showcasing different design patterns. In this repo you will find two more branches: `with-compound-v1`, `with-compound-v2`.
 
-## Version 1: Standard Components
+## Version 1 (under the master branch): Standard Components
 
 In this version, the `WeatherCard` component receives a `cityWeather` prop and directly utilizes sub-components like `City`, `WeatherIcon`, `WeatherName`, and `Temperature`.
 
-## Version 2: Compound Components
+## Version 2: Compound Components version 1 (under the with-compound-v1 branch):
 
-This version introduces the `WeatherCard.children` component, which accepts a `weather` prop and children components. In the `App.children` component, child components are included as children of the `WeatherCard.children` component.
+In this version the `WeatherCard` component accepts a `weather` prop and children components. In the `App` component, child components are included as children of the `WeatherCard` component.
+
+## Version 3: Compound Components version 2 (under the with-compound-v2 branch):
+
+In this version the `WeatherCard` component accepts a `weather` prop and children components. In the `App` component, a single `WeatherCardContent` child component is included as children of the `WeatherCard` component.
 
 ## Screenshots
 ### Desktop View
