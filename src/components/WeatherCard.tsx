@@ -1,29 +1,19 @@
-import { Weather } from '../types/Interfaces';
+import React from "react";
 
 import getImageSrc from '../utils/getImageSrc';
 
-import { WeatherIcon, Temperature, City, WeatherName } from './';
-
-
 interface WeatherCardProps {
-  cityWeather: Weather;
+  children: React.ReactNode;
+  weather: string;
 }
 
-const WeatherCard: React.FC<WeatherCardProps> = ({ cityWeather: { city, temperature, weather } }) => {
+const WeatherCard: React.FC<WeatherCardProps> = ({ children, weather }) => {
   const imageSrc: string = getImageSrc(weather, 'image');
 
   return (
     <div className='weather-card' style={{ backgroundImage: `url(${imageSrc})` }}>
-      <div className="weather-card-top">
-        <City name={city} />
-        <WeatherIcon weather={weather} />
-        <WeatherName weather={weather} />        
-      </div>
-      <div className="weather-card-bottom">
-        <Temperature value={temperature} />
-      </div>
-    </div>
-  );
+      {children}
+    </div>);
 };
 
 export default WeatherCard;
