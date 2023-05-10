@@ -34,7 +34,7 @@ To set up the Weather Widget App locally, follow these steps:
 2. Clone the repository:
 
 ```
-git clone https://github.com/username/weather-widget.git
+git clone https://github.com/obrm/weather-widget.git
 ```
 
 3. Navigate to the project directory:
