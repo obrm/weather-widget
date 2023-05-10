@@ -4,7 +4,7 @@ import weatherData from './data/weatherData';
 
 import { WeatherCard } from './components';
 
-import "./styles/App.scss";
+import "./styles/global.scss";
 
 const App: React.FC = () => {
   return (
